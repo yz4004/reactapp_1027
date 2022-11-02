@@ -1,0 +1,62 @@
+{
+  "name": "reactapp1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "@aws-amplify/analytics": "^5.2.20",
+    "@aws-amplify/api": "^4.0.53",
+    "@aws-amplify/auth": "^4.6.6",
+    "@aws-amplify/core": "^4.7.4",
+    "@aws-amplify/interactions": "^4.1.1",
+    "@aws-amplify/storage": "^4.5.6",
+    "@aws-amplify/ui-react": "^3.5.9",
+    "@aws-amplify/xr": "^3.0.53",
+    "@chakra-ui/react": "^1.7.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "aws-amplify": "^4.3.39",
+    "aws-appsync": "^4.1.4",
+    "framer-motion": "^5.5.5",
+    "graphql": "^16.2.0",
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "next dev"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "4.8.4"
+  }
+}
