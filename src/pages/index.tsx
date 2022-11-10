@@ -5,8 +5,11 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 import { Amplify } from 'aws-amplify';
-import awsExports from '../aws-exports';
+
+import awsExports from '../config/amplifyConfig';
 import { Router } from '@aws-amplify/ui-react/dist/types/components/Authenticator/Router';
+
+
 Amplify.configure(awsExports);
 import { useRouter } from 'next/router';
 
@@ -43,7 +46,26 @@ export default function Home() {
 
   const test_app1 = async () => {
 
-    router.push('/app');
+    router.push('/app_appollo_demo');
+
+  };
+
+
+
+  
+  const test_app2 = async () => {
+
+    console.log("Checkout");
+    router.push('/stripe');
+
+
+  };
+
+  const test_app3 = async () => {
+
+    console.log("Checkout");
+    //router.push('/stripe');
+
 
   };
 
@@ -88,6 +110,11 @@ export default function Home() {
             </Button>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
+            </Button>
+            <Button  
+              colorScheme={'red'} 
+              onClick={test_app2}>
+              Checkout
             </Button>
           </Stack>
         </Stack>

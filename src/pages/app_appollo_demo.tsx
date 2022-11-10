@@ -20,6 +20,9 @@ function DisplayLocations() {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error :(</p>;
   
+    console.log(JSON.stringify(data));
+
+
     return data.locations.map(({ id, name, description, photo }) => (
       <div key={id}>
         <h3>{name}</h3>
@@ -30,9 +33,10 @@ function DisplayLocations() {
         <br />
       </div>
     ));
+
   }
 
-  export default function App() {
+  export default function App_appollo_demo() {
     return (
       <div>
         <h2>My first Apollo app 🚀</h2>

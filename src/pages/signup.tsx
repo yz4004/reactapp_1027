@@ -20,7 +20,8 @@ import { Auth } from 'aws-amplify';
 import { useRouter } from 'next/router';
 
 import { Amplify } from 'aws-amplify';
-import awsExports from '../aws-exports';
+//import awsExports from '../aws-exports';
+import awsExports from '../config/amplifyConfig';
 Amplify.configure(awsExports);
 
 const Signup: NextPage = () => {
